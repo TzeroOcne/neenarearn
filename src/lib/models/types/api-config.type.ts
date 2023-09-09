@@ -1,3 +1,3 @@
 export type ApiConfig = {
-	[key in string]: string;
+  [key in string]: string;
 };

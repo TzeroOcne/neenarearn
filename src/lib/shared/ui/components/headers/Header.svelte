@@ -1,19 +1,19 @@
 <script lang="ts">
-	// Start: Local Imports
+  // Start: Local Imports
 
-	// Models
+  // Models
 
-	// Components
-	import { NavigationProgressBar } from '$ui/components/navigation-progress-bar';
-	import NavigationBar from '$ui/components/navigation-bars/NavigationBar.svelte';
-	// End: Local Imports
+  // Components
+  import { NavigationProgressBar } from '$ui/components/navigation-progress-bar';
+  import NavigationBar from '$ui/components/navigation-bars/NavigationBar.svelte';
+  // End: Local Imports
 
-	// Start: Exported Properties
-	export let useThemeModeButton!: boolean | undefined;
+  // Start: Exported Properties
+  export let useThemeModeButton!: boolean | undefined;
 
-	// End: Exported Properties
+  // End: Exported Properties
 
-	// Local properties
+  // Local properties
 </script>
 
 <!-- Start: Navigation Progress bar -->
@@ -21,5 +21,5 @@
 <!-- End: Navigation Progress bar -->
 
 <!-- Start: Navigation bar -->
-<NavigationBar useThemeModeButton="{useThemeModeButton}" on:toggleTheme />
+<NavigationBar {useThemeModeButton} on:toggleTheme />
 <!-- End: Navigation bar -->

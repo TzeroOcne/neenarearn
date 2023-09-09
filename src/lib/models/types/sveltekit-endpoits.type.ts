@@ -1,18 +1,18 @@
 import type {
-	SveltekitDataEndpointsDev,
-	SveltekitSearchEndpointsDev,
+  SveltekitDataEndpointsDev,
+  SveltekitSearchEndpointsDev,
 } from '../enums/sveltekit-endpoint.dev.enum';
 import type {
-	SveltekitDataEndpointsQa,
-	SveltekitSearchEndpointsQa,
+  SveltekitDataEndpointsQa,
+  SveltekitSearchEndpointsQa,
 } from '../enums/sveltekit-endpoint.qa.enum';
 import type {
-	SveltekitDataEndpointsProd,
-	SveltekitSearchEndpointsProd,
+  SveltekitDataEndpointsProd,
+  SveltekitSearchEndpointsProd,
 } from '../enums/sveltekit-endpoint.prod.enum';
 import type {
-	SveltekitDataEndpoints,
-	SveltekitSearchEndpoints,
+  SveltekitDataEndpoints,
+  SveltekitSearchEndpoints,
 } from '../enums/sveltekit-endpoint.enum';
 
 export type SveltekitDataEndpointType = 'SERVICE';
@@ -24,20 +24,20 @@ export type SveltekitEndpointType = SveltekitDataEndpointType | SveltekitSearchE
 export type SveltekitEndpoints = SveltekitDataEndpoints | SveltekitSearchEndpoints;
 
 export type SveltekitDataEndpointConfig = {
-	[key in SveltekitDataEndpointType]:
-		| SveltekitDataEndpoints
-		| SveltekitDataEndpointsProd
-		| SveltekitDataEndpointsDev
-		| SveltekitDataEndpointsQa;
+  [key in SveltekitDataEndpointType]:
+    | SveltekitDataEndpoints
+    | SveltekitDataEndpointsProd
+    | SveltekitDataEndpointsDev
+    | SveltekitDataEndpointsQa;
 };
 
 export type SveltekitSearchEndpointConfig = {
-	[key in SveltekitSearchEndpointType]:
-		| SveltekitSearchEndpoints
-		| SveltekitSearchEndpointsProd
-		| SveltekitSearchEndpointsDev
-		| SveltekitSearchEndpointsQa;
+  [key in SveltekitSearchEndpointType]:
+    | SveltekitSearchEndpoints
+    | SveltekitSearchEndpointsProd
+    | SveltekitSearchEndpointsDev
+    | SveltekitSearchEndpointsQa;
 };
 
 export type SveltekitStarterEndpointConfig = SveltekitDataEndpointConfig &
-	SveltekitSearchEndpointConfig;
+  SveltekitSearchEndpointConfig;

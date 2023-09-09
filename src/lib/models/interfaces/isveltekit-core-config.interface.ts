@@ -2,8 +2,8 @@ import type { SveltekitDataEndpointConfig } from '../types/sveltekit-endpoits.ty
 import type { ISveltekitStarterEnvironmentConfig } from './isveltekit-strater-environment.interface';
 
 export interface ISveltekitStarterCoreConfig<
-	T extends ISveltekitStarterEnvironmentConfig<K>,
-	K = SveltekitDataEndpointConfig
+  T extends ISveltekitStarterEnvironmentConfig<K>,
+  K = SveltekitDataEndpointConfig,
 > {
-	environment: T;
+  environment: T;
 }

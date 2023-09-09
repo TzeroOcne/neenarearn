@@ -16,31 +16,32 @@ import type { ISveltekitStarterEnvironmentConfig } from '$models/interfaces/isve
  * @public
  */
 class SveltekitStarterEnvironmentFacade<
-	T extends ISveltekitStarterEnvironmentConfig<SveltekitStarterEndpointConfig> = ISveltekitStarterEnvironmentConfig<SveltekitStarterEndpointConfig>
+  T extends
+    ISveltekitStarterEnvironmentConfig<SveltekitStarterEndpointConfig> = ISveltekitStarterEnvironmentConfig<SveltekitStarterEndpointConfig>,
 > {
-	constructor(private readonly coreConfig: ISveltekitStarterCoreConfig<T>) {}
+  constructor(private readonly coreConfig: ISveltekitStarterCoreConfig<T>) {}
 
-	public get endPoints(): SveltekitStarterEndpointConfig | undefined {
-		return this.coreConfig.environment.chuckNorriesAPIConfig.endPoints;
-	}
+  public get endPoints(): SveltekitStarterEndpointConfig | undefined {
+    return this.coreConfig.environment.chuckNorriesAPIConfig.endPoints;
+  }
 
-	public get defaultAPILang(): string | undefined {
-		return this.coreConfig.environment.chuckNorriesAPIConfig.defaultAPILang;
-	}
+  public get defaultAPILang(): string | undefined {
+    return this.coreConfig.environment.chuckNorriesAPIConfig.defaultAPILang;
+  }
 
-	public get environmentName(): string {
-		return this.coreConfig.environment.name;
-	}
+  public get environmentName(): string {
+    return this.coreConfig.environment.name;
+  }
 
-	public get launchURL(): string {
-		return this.coreConfig.environment.launchURL;
-	}
+  public get launchURL(): string {
+    return this.coreConfig.environment.launchURL;
+  }
 
-	public get isProd(): boolean {
-		return this.coreConfig.environment.production;
-	}
+  public get isProd(): boolean {
+    return this.coreConfig.environment.production;
+  }
 }
 
 export const sveltekitStarterEnvironmentFacade = new SveltekitStarterEnvironmentFacade({
-	environment,
+  environment,
 });

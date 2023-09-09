@@ -6,9 +6,9 @@ import type { ITwitterConfig } from './itwitter-config.interface';
 import type { IGitHubConfig } from './igithub-config.interface';
 
 export interface ISveltekitStarterEnvironmentConfig<T = SveltekitDataEndpointConfig>
-	extends IEnvironmentConfig {
-	apiUrls: SveltekitStarterApiConfig;
-	chuckNorriesAPIConfig: Partial<ISveltekitDBConfig<T>>;
-	twitterConfig: Partial<ITwitterConfig>;
-	gitHubConfig: Partial<IGitHubConfig>;
+  extends IEnvironmentConfig {
+  apiUrls: SveltekitStarterApiConfig;
+  chuckNorriesAPIConfig: Partial<ISveltekitDBConfig<T>>;
+  twitterConfig: Partial<ITwitterConfig>;
+  gitHubConfig: Partial<IGitHubConfig>;
 }
