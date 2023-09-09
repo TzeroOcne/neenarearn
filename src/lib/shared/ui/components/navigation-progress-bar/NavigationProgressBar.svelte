@@ -3,8 +3,8 @@
   import NProgress from 'nprogress';
 
   // Svelte Imports
+  import { browser } from '$app/environment';
   import { navigating } from '$app/stores';
-  import { browser } from '$app/env';
 
   NProgress.configure({
     showSpinner: false,
