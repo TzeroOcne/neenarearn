@@ -85,7 +85,7 @@ const config = {
       listStylePosition: ['hover', 'focus'],
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [require('@tailwindcss/typography'), require('daisyui')],
 };
 
 module.exports = config;

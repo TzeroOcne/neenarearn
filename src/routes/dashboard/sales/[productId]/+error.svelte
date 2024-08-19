@@ -19,7 +19,7 @@
   import HeadTags from '$components/head-tags/HeadTags.svelte';
 
   // Start: Sevelte Imports
-  import { dev } from '$app/env';
+  import { dev } from '$app/environment;';
   // End: Sevelte Imports
 
   // End: Local Imports
